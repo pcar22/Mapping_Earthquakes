@@ -12,6 +12,21 @@ let map = L.map('mapid').setView([40.7, -94.5], 4);
 //     zoom: 4
 //   });
 
+// Get data from cities.js
+let cityData = cities;
+
+cities.forEach(function (city) {
+    console.log(city)
+    L.circleMarker(city.location, {
+        color: "Orange",
+        radius: city.population /200000
+})
+        .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
+        .addTo(map);
+});
+
+
+
 
 // We create the tile layer that will be the background of our map.
 // We create the tile layer that will be the background of our map.
