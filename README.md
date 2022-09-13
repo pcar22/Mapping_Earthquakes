@@ -5,4 +5,4 @@ The purpose of this challenge is to have the earthquake data in relation to the 
 
 The map is showing the earthquakes in the past 7 days. Each feature is a circle marker on the map, and if clicked a popup message will appear showing the magnitude and location.
 
-![earthQuakeMap.png]("")
+![earthQuakeMap.png]("https://github.com/pcar22/Mapping_Earthquakes/blob/main/image/earthQuakeMap.png")
