@@ -18,7 +18,7 @@ let cityData = cities;
 cities.forEach(function (city) {
     console.log(city)
     L.circleMarker(city.location, {
-        color: "Orange",
+        color: "Red",
         radius: city.population /200000
 })
         .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
